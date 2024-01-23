@@ -26,6 +26,14 @@ a {
   text-decoration: none;
 }
 
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .btn {
   --height: 60px;
   display: inline-block;
@@ -138,6 +146,7 @@ a {
 .logo__branch {
   display: block;
   font-size: 1.8em;
+  font-family: "Sora", sans-serif;
   font-weight: 400;
   color: #fff;
 }
@@ -685,4 +694,119 @@ a {
   margin: 18px auto 38px;
   font-size: 1.6rem;
   line-height: 1.75;
+}
+
+/* ========== Footer ========== */
+.footer {
+  padding: 100px 0 0;
+  font-family: "Open Sans", sans-serif;
+  background: #10375c;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  grid-column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 20px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fff;
+}
+
+.footer__list {
+  margin-bottom: 28px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  margin-bottom: 10px;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.85714;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.footer-form {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  color: #fff;
+  background: transparent;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.85714;
+}
+
+.footer-form__submit {
+  min-width: 108px;
+  --height: 46px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer__copyright {
+  padding: 28px 0 42px;
+  border-top: 1px solid #406181;
+  text-align: center;
+}
+
+.footer__copyright-text {
+  color: #aab3ba;
+  font-size: 1.4rem;
+  line-height: 1.85714;
 }
